@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teaching in Turbulence | Capt. Vaibhav Goutham Suresh</title>
-<meta name="description" content="Teaching in Turbulence: A Narrative Guide to Teaching in Indian Higher Education, by Capt. Vaibhav Goutham Suresh. Foreword by Shri Anand Kumar. Out 7 December 2026.">
+<meta name="description" content="Teaching in Turbulence: A Narrative Guide to Teaching Through Change, by Capt. Vaibhav Goutham Suresh. Foreword by Shri Anand Kumar. Out 7 December 2026.">
 <meta property="og:title" content="Teaching in Turbulence">
 <meta property="og:description" content="A book you read like a novel and use like a manual. Out 7 December 2026.">
 <meta property="og:image" content="https://teachinginturbulence.com/assets/cover.jpg">
@@ -73,7 +73,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(251,247,236,.94);backdro
 .cover-wrap{position:relative;justify-self:center}
 .cover-wrap::before{content:"";position:absolute;inset:-34px -40px -20px;background:radial-gradient(closest-side,rgba(241,222,179,.85),rgba(241,222,179,0));z-index:0}
 .cover{position:relative;z-index:1;width:min(380px,100%);border-radius:4px 10px 10px 4px;box-shadow:0 2px 0 rgba(0,0,0,.04),0 28px 60px -12px rgba(27,60,101,.38),0 10px 22px rgba(27,60,101,.12);transform:rotate(1.5deg)}
-.launch-tag{position:absolute;z-index:2;left:-34px;bottom:46px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 12px 30px rgba(27,60,101,.14);font:600 13px/1.3 var(--sans);color:var(--muted)}
+.launch-tag{position:absolute;z-index:2;left:-40px;bottom:-26px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 12px 30px rgba(27,60,101,.14);font:600 13px/1.3 var(--sans);color:var(--muted)}
 .launch-tag b{display:block;font:800 20px/1.2 var(--serif);color:var(--ink)}
 .storm{position:absolute;left:-40px;bottom:-10px;width:560px;opacity:.35;pointer-events:none}
 .signup{position:relative;overflow:hidden}
@@ -156,7 +156,15 @@ section.block{padding:96px 0}
 .fw-role{font-size:18px;color:var(--gold-soft);margin:8px 0 28px}
 .fw-quote{margin:0 0 28px;padding:4px 0 4px 26px;border-left:4px solid var(--gold);font:italic 600 26px/1.45 var(--serif);color:var(--white)}
 .fw-quote .todo{display:inline-block;font:500 16px/1.5 var(--sans);font-style:normal;color:var(--ink);background:var(--gold-soft);border-radius:8px;padding:8px 12px}
-.fw-text>p:last-child{font-size:18px;margin:0}
+.fw-intro{font-size:18px;margin:0 0 28px}
+.fw-toggle{background:var(--gold);color:var(--ink);border:0;cursor:pointer}
+.fw-toggle:hover{background:var(--gold-soft)}
+.fw-full{margin-top:56px}
+.fw-paper{background:var(--cream);color:var(--text);border-radius:22px;padding:56px clamp(24px,7vw,110px);max-width:860px;margin:0 auto;font:400 19px/1.75 "Bitter",Georgia,serif;box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+.fw-paper .eyebrow{color:var(--gold);font-family:var(--sans)}
+.fw-paper p{margin:0 0 20px}
+.fw-sign{margin-top:36px !important;font-family:var(--sans);font-size:17px;line-height:1.5;color:var(--muted)}
+.fw-sign strong{font:800 22px var(--serif);color:var(--ink)}
 
 /* Audience */
 .aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -228,6 +236,8 @@ footer a:hover{color:var(--white);text-decoration:underline}
   .fw-grid{grid-template-columns:1fr;gap:40px}
   .foreword{padding:68px 0}
   .fw-quote{font-size:21px}
+  .fw-paper{padding:30px 22px;font-size:17px}
+  .fw-full{margin-top:36px}
   .strip .wrap{flex-direction:column}
   .strip .label{margin:0 0 6px}
   .strip ul{justify-content:center;font-size:15px;row-gap:8px}
@@ -279,7 +289,7 @@ footer a:hover{color:var(--white);text-decoration:underline}
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">A Narrative Guide to Teaching in Indian Higher Education</p>
+      <p class="eyebrow">A Narrative Guide to Teaching Through Change</p>
       <h1>Turbulence is not something to fear. <em>It is something to navigate.</em></h1>
       <p class="lead">Every week, hundreds of young people walk into a classroom and trust that the person at the front knows how to teach them. Most of those teachers were never taught how. <strong>Teaching in Turbulence</strong> is written to close that gap.</p>
       <div class="cta-row">
@@ -413,7 +423,35 @@ footer a:hover{color:var(--white);text-decoration:underline}
       <p class="eyebrow">The Foreword</p>
       <h2>Shri Anand Kumar</h2>
       <p class="fw-role">Founder of Super 30, Padma Shri awardee</p>
-      <p>His life's work is living proof that great teaching can change the entire trajectory of a young person, no matter where they begin. His words speak to the heart of this book: that teaching is not a routine to be performed, but a craft that can be learned, sharpened and honoured.</p>
+      <blockquote class="fw-quote">&ldquo;Sometimes, all that stands between a child and a better future is a teacher who believes in them.&rdquo;</blockquote>
+      <p class="fw-intro">In his foreword, Shri Anand Kumar writes about the ordinary teachers who quietly shape the future of our country, and why, in an age of artificial intelligence, a teacher&rsquo;s belief in a child still changes everything.</p>
+      <button class="btn fw-toggle" type="button" aria-expanded="false" aria-controls="fwFull">Read the full foreword <span class="arrow">&darr;</span></button>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="fw-full" id="fwFull" hidden>
+      <div class="fw-paper">
+        <p class="eyebrow">Foreword</p>
+          <p>Over the years, I have seen the same dream in the eyes of countless children. A dream of becoming someone. Of rising above poverty. Of being given just one chance to prove what they are capable of.</p>
+          <p>My journey has taught me something simple: talent does not depend on privilege. Sometimes, all that stands between a child and a better future is a teacher who believes in them.</p>
+          <p>Reading Captain Vaibhav&rsquo;s book brought me back to this truth.</p>
+          <p>Much has been written about education. Yet surprisingly little is said about the ordinary teachers who quietly shape the future of our country, often in small classrooms, remote villages, and places where resources are scarce but hopes are not.</p>
+          <p>This book tells their story.</p>
+          <p>It brings together twelve teachers for ten days. Each carries a different burden, a different disappointment, and a different reason to question the path they once chose. But as their journeys unfold, they begin to rediscover something they had almost forgotten: why they wanted to become teachers in the first place.</p>
+          <p>What struck me most about this book is its simplicity and honesty. It reminds us that meaningful education is not necessarily about impressive buildings, expensive technology, or sophisticated facilities. Sometimes, a dedicated teacher in a modest classroom can accomplish what even the finest infrastructure cannot.</p>
+          <p>I have witnessed this throughout my journey with Super 30. Many of the children who came to us could barely afford books, yet their dreams were enormous. Teaching them mathematics was important. But even more important was helping them believe that their circumstances did not have to determine their future.</p>
+          <p>That belief can change everything.</p>
+          <p>We now live in an age of artificial intelligence, when machines can solve complex problems in seconds. But there is something technology cannot easily replace: the ability of a teacher to look into the eyes of a frightened child and say, with genuine conviction, &ldquo;You can do it.&rdquo;</p>
+          <p>Sometimes, those four words are more powerful than an entire textbook.</p>
+          <p>To every teacher reading this, I want to say something from my own experience. There will be days when your efforts seem unnoticed, when progress feels painfully slow, and when you wonder whether anything you do really matters.</p>
+          <p>On those days, remember that somewhere in your classroom may be a child whose entire life will change because of something you said, a little encouragement you offered, or simply because you refused to give up on them.</p>
+          <p>You may never know the difference you made.</p>
+          <p>But that does not make the difference any less real.</p>
+          <p>Perhaps the greatest contribution of a teacher is not what happens inside a classroom today, but what becomes possible in the lives of children tomorrow.</p>
+          <p>Captain Vaibhav&rsquo;s book does more than explore the challenges of teaching. It reminds teachers of the hopes that first brought them into the classroom, and of the extraordinary influence they continue to have, often without realising it.</p>
+          <p>At a time when education is increasingly measured by marks, rankings, and technology, that is a reminder worth holding on to.</p>
+        <p class="fw-sign"><strong>Anand Kumar</strong><br>Founder, Super 30<br>Padma Shri Awardee</p>
+      </div>
     </div>
   </div>
 </section>
@@ -440,7 +478,7 @@ footer a:hover{color:var(--white);text-decoration:underline}
       <p class="eyebrow">About the author</p>
       <h2>From the cockpit to the classroom</h2>
       <p>Capt. Vaibhav Goutham Suresh writes from a path very few in academia have travelled. He began his working life in the cockpit as a commercial pilot, and went on to work across almost every corner of the aviation industry before turning to teaching and academic leadership. That journey, from flying to management to the classroom, is the reason this book sounds like no other. It is written by someone who has had to learn, unlearn and relearn his own craft in the real world, under real pressure, in a profession where mistakes carry consequences.</p>
-      <p>He holds a Commercial Pilot Licence, an MBA from IIM Bangalore and Toulouse Business School, and a degree in law, and is completing doctoral research on the Indian airline industry. Today he leads a university school spanning aviation, logistics and tourism, and chairs academic policy across a group of non-engineering schools. His work sits at the centre of how teaching is actually shaped: redesigning programmes and curricula, reforming the way students are assessed, giving real-world experience genuine academic weight, and building the structures through which a large faculty is mentored, trained and renewed. Developing teachers is not a side interest for him. It is the heart of what he does, and this book grows directly out of that work.</p>
+      <p>He holds a Commercial Pilot Licence, an MBA from IIM Bangalore and Toulouse Business School, and a degree in law, and is completing doctoral research on the Indian airline industry. Today he leads a university school and chairs academic policy across a group of non-engineering schools. His work sits at the centre of how teaching is actually shaped: redesigning programmes and curricula, reforming the way students are assessed, giving real-world experience genuine academic weight, and building the structures through which a large faculty is mentored, trained and renewed. Developing teachers is the heart of what he does, and this book grows directly out of that work.</p>
       <p>What drives him, and this book, is a simple conviction: that teaching in India deserves to be approached with the same rigour, honesty and care as any high-stakes profession. Teaching in Turbulence is his effort to place that conviction in the hands of every teacher who wants to do the work, and do it well.</p>
     </div>
   </div>
@@ -492,6 +530,10 @@ function tick(){let s=Math.max(0,(launch-new Date())/1000);
   document.getElementById('h').textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');
   document.getElementById('m').textContent=String(Math.floor(s%3600/60)).padStart(2,'0');}
 tick();setInterval(tick,30000);
+const fwBtn=document.querySelector('.fw-toggle'),fwFull=document.getElementById('fwFull');
+fwBtn.addEventListener('click',()=>{const open=fwFull.hidden;fwFull.hidden=!open;fwBtn.setAttribute('aria-expanded',open);
+  fwBtn.innerHTML=open?'Close the foreword <span class="arrow">&uarr;</span>':'Read the full foreword <span class="arrow">&darr;</span>';
+  if(!open)document.getElementById('foreword').scrollIntoView({behavior:'smooth'});});
 document.getElementById('signupForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#signupForm .fine').textContent='Thank you. Sign-ups open very soon, please check back shortly.'});
 </script>
 </body>
