@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teaching in Turbulence | Capt. Vaibhav Goutham Suresh</title>
+<meta name="description" content="Teaching in Turbulence: A Narrative Guide to Teaching in Indian Higher Education, by Capt. Vaibhav Goutham Suresh. Foreword by Shri Anand Kumar. Out 7 December 2026.">
+<meta property="og:title" content="Teaching in Turbulence">
+<meta property="og:description" content="A book you read like a novel and use like a manual. Out 7 December 2026.">
+<meta property="og:image" content="https://teachinginturbulence.com/assets/cover.jpg">
+<meta property="og:url" content="https://teachinginturbulence.com/">
+<meta property="og:type" content="book">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Remove the next line when the site is approved for search engines -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://teachinginturbulence.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,700;0,800;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --cream:#fbf7ec; --paper:#f4eedd; --ink:#1b3c65; --ink-2:#2c4f7c; --text:#23324a; --muted:#5b6677;
+  --gold:#d9a441; --gold-soft:#f1deb3; --line:#e4dcc6; --white:#fffdf7;
+  --serif:"Bitter",Georgia,serif; --sans:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font:18px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);line-height:1.15;margin:0}
+.eyebrow{font:600 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-primary{background:var(--ink);color:var(--white);box-shadow:0 6px 18px rgba(27,60,101,.22)}
+.btn-primary:hover{background:var(--ink-2);transform:translateY(-1px)}
+.btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--white)}
+.btn .arrow{font-size:18px}
+
+/* Announcement bar */
+.announce{background:var(--ink);color:#e9eef6;font:500 15px/1.4 var(--sans);text-align:center;padding:10px 16px}
+.announce strong{color:var(--gold-soft);font-weight:700}
+.announce a{color:var(--white);font-weight:600;text-underline-offset:3px}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:rgba(251,247,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo span{font:800 19px/1 var(--serif);color:var(--ink);letter-spacing:.02em;text-transform:uppercase}
+.links{display:flex;align-items:center;gap:30px;font-weight:600;font-size:16px}
+.links a{text-decoration:none;color:var(--text)}
+.links a:hover{color:var(--ink)}
+.links .btn{padding:11px 20px;font-size:15px}
+.links a.btn-primary{color:var(--white)}
+.menu-btn{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:72px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(38px,4.6vw,60px);font-weight:800;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--ink-2)}
+.hero .lead{font-size:20px;color:var(--text);margin:24px 0 32px;max-width:560px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.foreword-note{margin-top:34px;display:flex;align-items:center;gap:14px;padding-top:24px;border-top:1px solid var(--line);max-width:560px}
+.foreword-note{text-decoration:none}
+.foreword-note .mark{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-soft);flex:none}
+.foreword-note p{margin:0;font-size:16px;line-height:1.45;color:var(--muted)}
+.foreword-note strong{color:var(--ink);font-size:17px}
+.cover-wrap{position:relative;justify-self:center}
+.cover-wrap::before{content:"";position:absolute;inset:-34px -40px -20px;background:radial-gradient(closest-side,rgba(241,222,179,.85),rgba(241,222,179,0));z-index:0}
+.cover{position:relative;z-index:1;width:min(380px,100%);border-radius:4px 10px 10px 4px;box-shadow:0 2px 0 rgba(0,0,0,.04),0 28px 60px -12px rgba(27,60,101,.38),0 10px 22px rgba(27,60,101,.12);transform:rotate(1.5deg)}
+.launch-tag{position:absolute;z-index:2;left:-34px;bottom:46px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 12px 30px rgba(27,60,101,.14);font:600 13px/1.3 var(--sans);color:var(--muted)}
+.launch-tag b{display:block;font:800 20px/1.2 var(--serif);color:var(--ink)}
+.storm{position:absolute;left:-40px;bottom:-10px;width:560px;opacity:.35;pointer-events:none}
+.signup{position:relative;overflow:hidden}
+.signup-card{position:relative;z-index:1}
+
+/* Frameworks strip */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}
+.strip .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 0;padding-top:20px;padding-bottom:20px}
+.strip .label{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:26px}
+.strip ul{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;font:700 17px/1 var(--serif);color:var(--ink)}
+.strip li+li::before{content:"\2022";color:var(--gold);margin:0 16px}
+
+/* Countdown */
+.countdown{padding:56px 0 8px}
+.cd-card{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;background:var(--ink);color:#dfe7f2;border-radius:22px;padding:34px 40px;position:relative;overflow:hidden}
+.cd-card::after{content:"";position:absolute;right:-60px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(closest-side,rgba(217,164,65,.45),rgba(217,164,65,0))}
+.cd-card h2{color:var(--white);font-size:28px}
+.cd-card p{margin:8px 0 0;font-size:17px}
+.cd-units{display:flex;gap:12px;position:relative;z-index:1}
+.cd-unit{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;min-width:86px;padding:14px 10px;text-align:center}
+.cd-unit b{display:block;font:800 34px/1 var(--serif);color:var(--white)}
+.cd-unit span{font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft)}
+
+/* Sections */
+section.block{padding:96px 0}
+.section-head{max-width:760px;margin-bottom:48px}
+.section-head h2{font-size:clamp(30px,3.4vw,44px);font-weight:800}
+.section-head p{font-size:19px;color:var(--muted);margin:16px 0 0}
+.section-head .eyebrow,.signup .intro .eyebrow{font-size:13px;color:var(--gold);margin:0 0 16px}
+
+/* The question */
+.question{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.question h2{font-size:clamp(30px,3.2vw,42px);font-weight:800}
+.question .body p{margin:0 0 18px}
+.pull{margin:30px 0 0;padding:6px 0 6px 24px;border-left:4px solid var(--gold);font:italic 600 24px/1.4 var(--serif);color:var(--ink)}
+
+/* Numbers */
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:64px}
+.num{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px}
+.num b{display:block;font:800 52px/1 var(--serif);color:var(--ink)}
+.num span{display:block;margin-top:10px;font-weight:600;color:var(--text)}
+.num small{display:block;margin-top:4px;font-size:15px;color:var(--muted)}
+
+/* Topics */
+.topics{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.topic{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px 28px 26px;transition:transform .15s,box-shadow .15s}
+.topic:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(27,60,101,.10)}
+.topic .ic{width:46px;height:46px;border-radius:12px;background:var(--gold-soft);display:grid;place-items:center;margin-bottom:18px}
+.topic .ic svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.topic h3{font-size:21px;margin-bottom:8px}
+.topic p{margin:0;font-size:16.5px;color:var(--muted)}
+
+/* Different */
+.diff-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.diff{border-top:3px solid var(--gold);padding-top:18px}
+.diff b{font:800 15px/1 var(--serif);color:var(--gold);letter-spacing:.06em}
+.diff h3{font-size:20px;margin:10px 0 8px}
+.diff p{margin:0;font-size:16px;color:var(--muted)}
+
+/* Fellows */
+.fellows-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.fellow{text-align:center}
+.fellow .av{width:100%;max-width:104px;margin:0 auto;aspect-ratio:1;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;background:var(--white);font:700 26px var(--serif);color:var(--ink);position:relative}
+.fellow.next .av{background:var(--paper);color:var(--muted);border-style:dashed;border-color:var(--muted)}
+.fellow .av::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1px solid var(--line)}
+.fellow b{display:block;margin-top:12px;font:700 17px var(--serif);color:var(--ink)}
+.fellow span{display:block;font-size:14px;color:var(--muted)}
+.fellows-note{margin-top:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:22px 26px;border:1px dashed var(--gold);border-radius:16px;background:rgba(241,222,179,.28)}
+.fellows-note p{margin:0;font-weight:600;color:var(--ink)}
+
+/* Foreword band */
+.foreword{background:var(--ink);color:#dfe7f2;padding:96px 0;position:relative;overflow:hidden}
+.fw-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.fw-photo{margin:0;background:var(--cream);border-radius:22px;padding:18px 18px 12px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
+.fw-photo img{border-radius:12px;width:100%}
+.fw-photo figcaption{font:italic 500 15px/1.4 var(--serif);color:var(--muted);text-align:center;padding-top:10px}
+.foreword .eyebrow{color:var(--gold-soft)}
+.foreword h2{color:var(--white);font-size:clamp(34px,3.8vw,50px);font-weight:800}
+.fw-role{font-size:18px;color:var(--gold-soft);margin:8px 0 28px}
+.fw-quote{margin:0 0 28px;padding:4px 0 4px 26px;border-left:4px solid var(--gold);font:italic 600 26px/1.45 var(--serif);color:var(--white)}
+.fw-quote .todo{display:inline-block;font:500 16px/1.5 var(--sans);font-style:normal;color:var(--ink);background:var(--gold-soft);border-radius:8px;padding:8px 12px}
+.fw-text>p:last-child{font-size:18px;margin:0}
+
+/* Audience */
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.aud{border-top:3px solid var(--ink);padding-top:22px}
+.aud h3{font-size:22px;margin-bottom:10px}
+.aud p{margin:0 0 14px;color:var(--muted);font-size:17px}
+.aud a{font-weight:700;color:var(--ink);text-decoration:none}
+.aud a:hover{text-decoration:underline}
+.aud-note{margin:44px 0 0;padding:20px 24px;background:var(--paper);border-radius:14px;color:var(--text);font-size:17px}
+
+/* Author */
+.author{background:var(--paper);border-top:1px solid var(--line)}
+.author-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:start}
+.author-grid .photo{position:sticky;top:110px}
+.photo{aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,#e9e1ca,#d8ceb2);display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .ph{text-align:center;color:var(--muted);font-weight:600;font-size:15px}
+.photo .ph svg{width:92px;height:92px;stroke:var(--muted);fill:none;stroke-width:1.2;margin:0 auto 10px;display:block}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 30px;padding:0;list-style:none}
+.creds li{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:600;color:var(--ink)}
+.author h2{font-size:clamp(30px,3.4vw,44px);font-weight:800;margin-bottom:20px}
+.author p{margin:0 0 16px;font-size:17px}
+.author .btn{margin-top:14px}
+
+/* Signup */
+.signup{padding:96px 0}
+.signup-card{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:26px;padding:56px;box-shadow:0 30px 60px -30px rgba(27,60,101,.25)}
+.signup h2{font-size:clamp(30px,3.2vw,42px);font-weight:800}
+.signup .intro p{color:var(--muted);font-size:18px}
+.signup ul{padding:0;margin:20px 0 0;list-style:none}
+.signup ul li{padding-left:30px;position:relative;margin-bottom:10px;font-weight:600}
+.signup ul li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:9px;border-left:2.5px solid var(--gold);border-bottom:2.5px solid var(--gold);transform:rotate(-45deg)}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:15px;color:var(--ink);display:grid;gap:6px}
+input,select{font:inherit;font-size:17px;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--text)}
+input:focus,select:focus{outline:none;border-color:var(--ink);background:var(--white)}
+form .btn{justify-content:center;border:0;cursor:pointer;margin-top:6px}
+.fine{font-size:14px;color:var(--muted);margin:0}
+
+/* Footer */
+footer{background:var(--ink);color:#c9d4e3;padding:64px 0 30px;position:relative;overflow:hidden}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h3{color:var(--white);font-size:24px;text-transform:uppercase;letter-spacing:.02em}
+footer .tag{font:italic 600 18px/1.5 var(--serif);color:var(--gold-soft);margin:14px 0 0}
+footer h4{margin:0 0 14px;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft)}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:9px}
+footer a{text-decoration:none;color:#dfe7f2}
+footer a:hover{color:var(--white);text-decoration:underline}
+.signoff{margin-top:50px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:15px}
+.signoff em{font-family:var(--serif);color:var(--white)}
+
+/* Mobile */
+@media (max-width:960px){
+  body{font-size:17px}
+  .links{display:none}
+  .links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid var(--line);padding:8px 28px 22px}
+  .links.open a{padding:14px 0;border-bottom:1px solid var(--line);width:100%}
+  .links.open .btn{margin-top:14px;justify-content:center;border:0}
+  .menu-btn{display:block}
+  .hero{padding:36px 0 30px}
+  .hero-grid,.question,.author-grid,.signup-card{grid-template-columns:1fr;gap:40px}
+  .cover-wrap{order:-1}
+  .cover{width:min(250px,70vw)}
+  .launch-tag{display:none}
+  .hero .lead{font-size:18px}
+  .cta-row .btn{width:100%;justify-content:center}
+  .storm{width:360px;opacity:.35}
+  .fw-grid{grid-template-columns:1fr;gap:40px}
+  .foreword{padding:68px 0}
+  .fw-quote{font-size:21px}
+  .strip .wrap{flex-direction:column}
+  .strip .label{margin:0 0 6px}
+  .strip ul{justify-content:center;font-size:15px;row-gap:8px}
+  .strip li+li::before{margin:0 10px}
+  .cd-card{grid-template-columns:1fr;padding:28px 22px}
+  .cd-units{justify-content:space-between;gap:8px}
+  .cd-unit{min-width:0;flex:1;padding:12px 4px}
+  .cd-unit b{font-size:28px}
+  section.block,.signup{padding:68px 0}
+  .numbers{grid-template-columns:1fr;gap:14px;margin-top:44px}
+  .num{display:flex;align-items:center;gap:18px;padding:20px 22px}
+  .num b{font-size:40px;min-width:62px}
+  .num span{margin:0}
+  .topic-grid,.aud-grid{grid-template-columns:1fr;gap:14px}
+  .diff-grid{grid-template-columns:1fr;gap:26px}
+  .topic{display:grid;grid-template-columns:46px 1fr;column-gap:16px;padding:20px}
+  .topic .ic{margin:0;grid-row:span 2}
+  .topic h3{font-size:19px;margin-bottom:4px}
+  .topic p{font-size:15.5px}
+  .fellows-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  .fellow .av{font-size:22px}
+  .author-grid .photo{max-width:320px}
+  .signup-card{padding:30px 22px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid > div:first-child{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Out on <strong>Monday 7 December 2026</strong> &middot; <a href="#signup">Read the Prologue free</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><svg width="46" height="30" viewBox="0 0 46 30" aria-hidden="true"><path d="M13 11a10 10 0 0 1 20 0z" fill="#e2ae4c"/><path d="M5 11h36" stroke="#e2ae4c" stroke-width="1.5" stroke-linecap="round" opacity=".5"/><path d="M23 11c-8 3 7 5-2 9s8 4-4 8" fill="none" stroke="#1b3c65" stroke-width="1.8" stroke-linecap="round"/></svg><span>Teaching in Turbulence</span></a>
+    <nav class="links" id="links">
+      <a href="#book">The Book</a>
+      <a href="#fellows">The Fellows</a>
+      <a href="#author">Author</a>
+      <a href="#institutions">For Institutions</a>
+      <a href="#foreword">Foreword</a>
+      <a class="btn btn-primary" href="#signup">Free Prologue</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">A Narrative Guide to Teaching in Indian Higher Education</p>
+      <h1>Turbulence is not something to fear. <em>It is something to navigate.</em></h1>
+      <p class="lead">Every week, hundreds of young people walk into a classroom and trust that the person at the front knows how to teach them. Most of those teachers were never taught how. <strong>Teaching in Turbulence</strong> is written to close that gap.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#signup">Read the Prologue free <span class="arrow">&rarr;</span></a>
+        <a class="btn btn-ghost" href="#book">About the book</a>
+      </div>
+      <a class="foreword-note" href="#foreword">
+        <img class="mark" src="assets/ak-face.jpg" alt="Shri Anand Kumar">
+        <p><strong>Foreword by Shri Anand Kumar</strong><br>Founder of Super 30, Padma Shri awardee</p>
+      </a>
+    </div>
+    <div class="cover-wrap">
+      <img class="cover" src="assets/cover.jpg" alt="Cover of Teaching in Turbulence by Capt. Vaibhav Goutham Suresh">
+      <div class="launch-tag">Out on<b>7 December 2026</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="label">Aligned with</span>
+    <ul><li>NEP 2020</li><li>UGC LOCF</li><li>MMTTP</li><li>NAAC</li><li>NBA</li></ul>
+  </div>
+</div>
+
+<section class="countdown" id="launch">
+  <div class="wrap">
+    <div class="cd-card">
+      <div>
+        <h2>Cleared for take-off on 7 December</h2>
+        <p>Teaching in Turbulence arrives on Monday 7 December 2026. Read the Prologue now and be the first to know when it is out.</p>
+      </div>
+      <div class="cd-units" id="cd">
+        <div class="cd-unit"><b id="d">14</b><span>Days</span></div>
+        <div class="cd-unit"><b id="h">00</b><span>Hours</span></div>
+        <div class="cd-unit"><b id="m">00</b><span>Minutes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="book">
+  <div class="wrap">
+    <div class="question">
+      <div>
+        <p class="eyebrow">About the book</p>
+        <h2>A faculty development book unlike any other on the shelf</h2>
+        <blockquote class="pull">A book you read like a novel and use like a manual.</blockquote>
+      </div>
+      <div class="body">
+        <p>Instead of lecturing teachers about pedagogy, it tells a story. Twelve faculty members, drawn from different disciplines, institutions and stages of a career, arrive at a ten-day residential teaching fellowship led by a former pilot who became a Dean.</p>
+        <p>Over those ten days, they confront the real questions of modern teaching. The reader learns exactly what the characters learn, and arrives at the same quiet realisation they do.</p>
+        <a class="btn btn-ghost" href="#topics">See what's inside <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="numbers">
+      <div class="num"><b>10</b><div><span>days of fellowship</span><small>led by a former pilot turned Dean</small></div></div>
+      <div class="num"><b>12</b><div><span>faculty fellows</span><small>different disciplines, institutions and career stages</small></div></div>
+      <div class="num"><b>1</b><div><span>worksheet per chapter</span><small>with a reflection, so you act, not merely nod along</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block topics" id="topics">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Inside the book</p>
+      <h2>The real questions of modern teaching</h2>
+      <p>Drawing on global learning science and India's own frameworks, including NEP 2020 and outcome-based education, so the ideas are world-class and locally usable.</p>
+    </div>
+    <div class="topic-grid">
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Why we teach</h3><p>Rediscovering the purpose behind the work, and keeping it meaningful when the rules keep changing.</p></div>
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-6h6v6"/></svg></div><h3>How students actually learn</h3><p>What learning science says, and what it means for your next class.</p></div>
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3>Designing a course</h3><p>From syllabus to real understanding, and how to recover when a class falls apart.</p></div>
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M10 18h4"/></svg></div><h3>A generation raised on screens</h3><p>Holding the attention of a restless generation, without fighting it.</p></div>
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg></div><h3>Using AI honestly</h3><p>Making artificial intelligence work for learning, with integrity on both sides of the desk.</p></div>
+      <div class="topic"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h11"/></svg></div><h3>Measuring learning</h3><p>Assessment and outcomes that show real learning, without drowning in paperwork.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="block" id="different">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What makes it different</p>
+      <h2>Written by a practitioner, not a theorist</h2>
+    </div>
+    <div class="diff-grid">
+      <div class="diff"><b>01</b><h3>A story, not a sermon</h3><p>Readers remember characters and moments long after they forget frameworks. This book teaches through both.</p></div>
+      <div class="diff"><b>02</b><h3>Honest</h3><p>It names what everyone in academia knows but rarely says, from accreditation theatre to burnout to corridor politics, and still offers a way through.</p></div>
+      <div class="diff"><b>03</b><h3>From the cockpit</h3><p>A pilot's discipline of checklists and precision, brought to the craft of teaching.</p></div>
+      <div class="diff"><b>04</b><h3>Grounded in both worlds</h3><p>Global learning science alongside NEP 2020 and outcome-based education.</p></div>
+      <div class="diff"><b>05</b><h3>Built to be used</h3><p>Every chapter closes with a worksheet and a reflection.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="fellows">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The Fellowship</p>
+      <h2>Meet the twelve</h2>
+      <p>Twelve faculty from different disciplines, institutions and stages of a career, each carrying their own turbulence into the fellowship.</p>
+    </div>
+    <div class="fellows-grid">
+      <div class="fellow"><div class="av">A</div><b>Aarav</b></div>
+      <div class="fellow"><div class="av">R</div><b>Rangarajan</b></div>
+      <div class="fellow"><div class="av">J</div><b>Joseph</b></div>
+      <div class="fellow"><div class="av">K</div><b>Kavya</b></div>
+      <div class="fellow"><div class="av">M</div><b>Meera</b></div>
+      <div class="fellow"><div class="av">S</div><b>Sunita</b></div>
+      <div class="fellow"><div class="av">A</div><b>Aloy</b></div>
+      <div class="fellow"><div class="av">F</div><b>Faiz</b></div>
+      <div class="fellow"><div class="av">L</div><b>Lakshmi</b></div>
+      <div class="fellow"><div class="av">G</div><b>Grace</b></div>
+      <div class="fellow"><div class="av">T</div><b>Tarun</b></div>
+      <div class="fellow"><div class="av">A</div><b>Anjali</b></div>
+    </div>
+    <div class="fellows-note">
+      <p>Full profiles of all twelve fellows will be revealed on 30 November.</p>
+      <a class="btn btn-ghost" href="#signup">Notify me <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="foreword" id="foreword">
+  <div class="wrap fw-grid">
+    <figure class="fw-photo"><img src="assets/foreword-photo.jpg" alt="Shri Anand Kumar with Capt. Vaibhav Goutham Suresh"><figcaption>Shri Anand Kumar with the author</figcaption></figure>
+    <div class="fw-text">
+      <p class="eyebrow">The Foreword</p>
+      <h2>Shri Anand Kumar</h2>
+      <p class="fw-role">Founder of Super 30, Padma Shri awardee</p>
+      <p>His life's work is living proof that great teaching can change the entire trajectory of a young person, no matter where they begin. His words speak to the heart of this book: that teaching is not a routine to be performed, but a craft that can be learned, sharpened and honoured.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="institutions">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Who it will help</p>
+      <h2>For everyone who stands in front of a class</h2>
+    </div>
+    <div class="aud-grid">
+      <div class="aud"><h3>New faculty</h3><p>Who know their subject deeply but have never been taught how to hold a room.</p><a href="#signup">Start with the Prologue &rarr;</a></div>
+      <div class="aud"><h3>Experienced professors</h3><p>Looking to renew a craft they have practised, often alone, for decades.</p><a href="#signup">Start with the Prologue &rarr;</a></div>
+      <div class="aud"><h3>Deans, HoDs and academic leaders</h3><p>Who run faculty development programmes, for whom it works as a ready companion text.</p><a href="#institutions">Orders for institutions &rarr;</a></div>
+    </div>
+    <p class="aud-note">Written for higher education, its questions apply just as powerfully to senior school teachers shaping students before they ever reach a university gate.</p>
+  </div>
+</section>
+
+<section class="block author" id="author">
+  <div class="wrap author-grid">
+    <div class="photo"><img src="assets/author.jpg" alt="Capt. Vaibhav Goutham Suresh"></div>
+    <div>
+      <p class="eyebrow">About the author</p>
+      <h2>From the cockpit to the classroom</h2>
+      <p>Capt. Vaibhav Goutham Suresh writes from a path very few in academia have travelled. He began his working life in the cockpit as a commercial pilot, and went on to work across almost every corner of the aviation industry before turning to teaching and academic leadership. That journey, from flying to management to the classroom, is the reason this book sounds like no other. It is written by someone who has had to learn, unlearn and relearn his own craft in the real world, under real pressure, in a profession where mistakes carry consequences.</p>
+      <p>He holds a Commercial Pilot Licence, an MBA from IIM Bangalore and Toulouse Business School, and a degree in law, and is completing doctoral research on the Indian airline industry. Today he leads a university school spanning aviation, logistics and tourism, and chairs academic policy across a group of non-engineering schools. His work sits at the centre of how teaching is actually shaped: redesigning programmes and curricula, reforming the way students are assessed, giving real-world experience genuine academic weight, and building the structures through which a large faculty is mentored, trained and renewed. Developing teachers is not a side interest for him. It is the heart of what he does, and this book grows directly out of that work.</p>
+      <p>What drives him, and this book, is a simple conviction: that teaching in India deserves to be approached with the same rigour, honesty and care as any high-stakes profession. Teaching in Turbulence is his effort to place that conviction in the hands of every teacher who wants to do the work, and do it well.</p>
+    </div>
+  </div>
+</section>
+
+<section class="signup" id="signup">
+  <img class="storm" src="assets/storm.png" alt="">
+  <div class="wrap">
+    <div class="signup-card">
+      <div class="intro">
+        <p class="eyebrow">Free Prologue</p>
+        <h2>Start the fellowship today</h2>
+        <p>Read the Prologue free, meet the fellowship, and be first to know when the book is out.</p>
+        <ul><li>The Prologue as a PDF, straight to your inbox</li><li>A note the day the book is out</li><li>Occasional field notes for teachers, never spam</li></ul>
+      </div>
+      <form id="signupForm" novalidate>
+        <label>Your name<input type="text" name="name" placeholder="Dr. Priya Sharma" autocomplete="name"></label>
+        <label>Email address<input type="email" name="email" placeholder="you@university.edu.in" autocomplete="email" required></label>
+        <label>I am a<select name="role"><option>Faculty member</option><option>Dean, Director or HoD</option><option>IQAC or FDP coordinator</option><option>Research scholar</option><option>Other</option></select></label>
+        <button class="btn btn-primary" type="submit">Send me the Prologue <span class="arrow">&rarr;</span></button>
+        <p class="fine">Unsubscribe any time. Your email stays with us.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Teaching in Turbulence</h3>
+        <p class="tag">Navigating change. Finding direction. Inspiring better teaching.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#book">The Book</a></li><li><a href="#fellows">The Fellows</a></li><li><a href="#author">Author</a></li><li><a href="#foreword">Foreword</a></li></ul></div>
+      <div><h4>Connect</h4><ul><li><a href="#institutions">For Institutions</a></li><li><a href="#">Media Kit</a></li><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="signoff"><em>Clear Skies and Smooth Transitions.</em><span>&copy; 2026 Capt. Vaibhav Goutham Suresh &middot; teachinginturbulence.com</span></div>
+  </div>
+</footer>
+
+<script>
+const btn=document.getElementById('menuBtn'),links=document.getElementById('links');
+btn.addEventListener('click',()=>{const o=links.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+links.addEventListener('click',e=>{if(e.target.closest('a'))links.classList.remove('open')});
+const launch=new Date('2026-12-07T00:00:00+05:30');
+function tick(){let s=Math.max(0,(launch-new Date())/1000);
+  document.getElementById('d').textContent=Math.floor(s/86400);
+  document.getElementById('h').textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');
+  document.getElementById('m').textContent=String(Math.floor(s%3600/60)).padStart(2,'0');}
+tick();setInterval(tick,30000);
+document.getElementById('signupForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#signupForm .fine').textContent='Thank you. Sign-ups open very soon, please check back shortly.'});
+</script>
+</body>
+</html>
